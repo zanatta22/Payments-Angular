@@ -27,7 +27,7 @@ export class PaymentDetailListComponent implements OnInit {
     this.service.deletePaymentDetail(PMID)
     .subscribe(res => {
       this.service.refreshList();
-      this.toastr.warning('Delete Successfully', 'Payment Detaill Register');
+      this.toastr.warning('Delete Successfully', 'Payment Detail Register');
     },
         err => {
           console.log(err);
